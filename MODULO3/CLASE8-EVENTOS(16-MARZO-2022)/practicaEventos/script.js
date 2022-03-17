@@ -2,7 +2,7 @@ const noticias = [
     {
         titulo:"Turismo de vacunas: 2.000 personas por día reciben su dosis en el aeropuerto de Miami",
         imgUrl: "https://www.infobae.com/new-resizer/H9B9uvmwpunxOo6DwuGGMoaVGiE=/265x149/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/YXOQB3X5SZ2HPD2SWP2HOCBDZA.jpg",
-                fecha:"07/06/21",
+        fecha:"07/06/21",
         tipoNacional: true
  
     },
@@ -42,4 +42,22 @@ const noticias = [
 let imagenNal = document.querySelector(".nacionales img");
 let imagenInternacional = document.querySelector(".internacionales img");
 
-let tituloNal = document.querySelector("h3");
+let tipo = noticias[1].tipoNacional;
+console.log(tipo);
+
+
+for (let indice of noticias){
+
+    if (noticias[indice].tipoNacional){ // ejecuta script para noticias nacionales, es decir true
+        document.querySelector(".nacionales")
+    }
+    else{
+
+    }
+
+}
+
+/*
+function creacionNoticia(){
+
+}*/
