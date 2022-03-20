@@ -40,16 +40,23 @@ function obtenerDatosDelUsuario() {
   datosPersona.ciudad = prompt("Ingresa la ciudad de nacimiento");
   datosPersona.interesPorJs = confirm("¿Te interesa javaScript?");
 
-  console.log(datosPersona);
 }
 
 function renderizarDatosUsuario() {
   /* ------------------- NO TOCAR NI ELIMINAR ESTA FUNCION. ------------------- */
   obtenerDatosDelUsuario();
   /* --------------- PUNTO 2: Escribe tu codigo a partir de aqui --------------- */
-  
+  let mostrarNombre = document.querySelector("#nombre");
+  mostrarNombre.innerText = `${datosPersona.nombre}`;
 
+  let mostrarEdad = document.getElementById("edad");
+  mostrarEdad.innerText = `${datosPersona.edad}`;
 
+  let mostrarCiudad = document.getElementById("ciudad");
+  mostrarCiudad.innerText = `${datosPersona.ciudad}`;
+
+  let mostrarInteresJs = document.getElementById("javascript");
+  mostrarInteresJs.innerText = `${(datosPersona.interesPorJs) ? "Si" : "No"}`;
 }
 
 
