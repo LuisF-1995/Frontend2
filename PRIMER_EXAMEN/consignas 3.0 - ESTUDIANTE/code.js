@@ -35,8 +35,17 @@ cambiarTema.addEventListener("click", alternarColorTema);
 
 function obtenerDatosDelUsuario() {
   /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
- 
+  let nombre = prompt("Por favor ingrese su nombre");
+  let anioNacimiento = parseInt(prompt("Ingresa el año en que naciste"));
+  let ciudadNacimiento = prompt("Ingresa la ciudad de nacimiento");
+  let interesJS = confirm("¿Te interesa javaScript?");
 
+  const datosPersona = {
+    nombre: nombre,
+    anioNac: anioNacimiento,
+    ciudad: ciudadNacimiento,
+    interesaJs: interesJS
+  }
 
 }
 
