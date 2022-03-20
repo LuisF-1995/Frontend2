@@ -35,11 +35,12 @@ cambiarTema.addEventListener("click", alternarColorTema);
 
 function obtenerDatosDelUsuario() {
   /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
+  let fechaActual = new Date();
+  
   datosPersona.nombre = prompt("Por favor ingrese su nombre");
-  datosPersona.edad = 2022 - parseInt(prompt("Ingresa el año en que naciste"));
-  datosPersona.ciudad = prompt("Ingresa la ciudad de nacimiento");
+  datosPersona.edad = fechaActual.getFullYear() - parseInt(prompt("Ingresa el año en que naciste"));
+  datosPersona.ciudad = prompt("Ingresa la ciudad donde vives");
   datosPersona.interesPorJs = confirm("¿Te interesa javaScript?");
-
 }
 
 function renderizarDatosUsuario() {
@@ -63,7 +64,7 @@ function renderizarDatosUsuario() {
 function recorrerListadoYRenderizarTarjetas() {
   /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
   
-
+  
 
 }
 
