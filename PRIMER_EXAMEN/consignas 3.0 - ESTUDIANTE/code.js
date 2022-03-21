@@ -84,10 +84,8 @@ function recorrerListadoYRenderizarTarjetas() {
 
 function alternarColorTema() {
   /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
- 
-  
-
-
+  let pagina = document.getElementById("sitio");
+  pagina.classList.toggle("dark");
 }
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
