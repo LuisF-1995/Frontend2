@@ -89,4 +89,9 @@ function alternarColorTema() {
 }
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
-
+let textoOculto = document.getElementById("sobre-mi");
+window.addEventListener("keypress", function(evento){
+  if ((evento.key).toLowerCase() == "f"){
+    textoOculto.classList.remove("oculto");
+  }
+})
