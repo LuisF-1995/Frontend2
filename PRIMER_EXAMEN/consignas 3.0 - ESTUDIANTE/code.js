@@ -63,8 +63,22 @@ function renderizarDatosUsuario() {
 
 function recorrerListadoYRenderizarTarjetas() {
   /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
+  let cajaFila = document.getElementById("fila");
+  cajaFila.innerHTML = ``;
   
+  function crearCaja(imagen, lenguajes, bimestre){
+
+    let cajaFila = document.getElementById("fila");
+    const templateCaja = `<div class = "caja">
+                          <img src="${imagen}" alt="${lenguajes}">
+                          <p class="lenguajes">${lenguajes}</p>
+                          <p class="bimestre">${bimestre}</p>
+                          </div>`;
+    
+    cajaFila.innerHTML += templateCaja;
+  }
   
+  listado.forEach(elemento => crearCaja(elemento.imgUrl, elemento.lenguajes, elemento.bimestre));
 
 }
 
