@@ -63,9 +63,6 @@ function renderizarDatosUsuario() {
 
 function recorrerListadoYRenderizarTarjetas() {
   /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
-  let cajaFila = document.getElementById("fila");
-  cajaFila.innerHTML = ``;
-  
   function crearCaja(imagen, lenguajes, bimestre){
 
     let cajaFila = document.getElementById("fila");
@@ -79,6 +76,8 @@ function recorrerListadoYRenderizarTarjetas() {
   }
   
   listado.forEach(elemento => crearCaja(elemento.imgUrl, elemento.lenguajes, elemento.bimestre));
+
+  materiasBtn.disabled = true;
 
 }
 
